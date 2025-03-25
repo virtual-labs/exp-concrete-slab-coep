@@ -35,23 +35,7 @@
             "correctAnswer": "c",
             "difficulty": "beginner"
         },
-        {
-            "question": "What is the code that gives the guideline about bar bending and cut off details?",
-            "answers": {
-                "a": "IS 456:2000",
-                "b": "CP110",
-                "c": "IS 489",
-                "d": "IS 10262"
-            },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
-            },
-            "correctAnswer": "b",
-            "difficulty": "beginner"
-        },
+ 
         {
             "question": "The minimum spacing for the parallel reinforcement bars of a slab thickness 70mm is given as which of the following?",
             "answers": {
