@@ -1,0 +1,90 @@
+{
+    "version": 2,
+    "questions": [
+        {
+            "question": "What is the highest dia reinforcing may be used for an 80mm thick slab?",
+            "answers": {
+                "a": "20mm",
+                "b": "25mm",
+                "c": "16mm",
+                "d": "10mm"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "The thickness of a slab of dimension 5m*6m subjected to moment of 9kN-m/m width of M20 concrete and Fe415 steel is given by which of the following?",
+            "answers": {
+                "a": "100mm",
+                "b": "150mm",
+                "c": "200mm",
+                "d": "300mm"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the effective depth of a 120mm thick slab having clear cover 25mm and rebars of 20mm?",
+            "answers": {
+                "a": "75mm",
+                "b": "85mm",
+                "c": "65mm",
+                "d": "55mm"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "For a continuous slab (Fe 415) of 3000*6000 what is the maximum thickness of the slab?",
+            "answers": {
+                "a": "94mm",
+                "b": "84mm",
+                "c": "75mm",
+                "d": "44mm"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": ".Which of the following is the basic value of effective depth ratio for control of deflection for cantilever slabs (for span up to 10)?",
+            "answers": {
+                "a": "7",
+                "b": "20",
+                "c": "26",
+                "d": "33"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        }
+    ]
+}

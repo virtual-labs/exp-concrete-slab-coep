@@ -1,0 +1,74 @@
+{
+    "version": 2,
+    "questions": [
+        {
+            "question": "For a simply supported slab of dimension what is the percentage of minimum area of reinforcement (mild steel reinforcement)?",
+            "answers": {
+                "a": ".15%",
+                "b": ".36%",
+                "c": ".24%",
+                "d": ".48%"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the horizontal distance or spacing between the reinforcement bars of an 80mm thick slab?",
+            "answers": {
+                "a": "340mm",
+                "b": "440mm",
+                "c": "240mm",
+                "d": "540mm"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+ 
+        {
+            "question": "The minimum spacing for the parallel reinforcement bars of a slab thickness 70mm is given as which of the following?",
+            "answers": {
+                "a": "350mm",
+                "b": "150mm",
+                "c": "200mm",
+                "d": "300mm"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the not function of the transverse reinforcement?",
+            "answers": {
+                "a": "It distributes the load more evenly and uniformly on the slab",
+                "b": "It prevents the shrinkage or temperature effect",
+                "c": "It keeps the main reinforcement in position",
+                "d": "It works as the main reinforcement"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        }
+    ]
+}
