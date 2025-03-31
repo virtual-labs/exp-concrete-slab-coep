@@ -1,6 +1,6 @@
 
+![img-1](images/slabtype.png)
 
-![img-1](images/slabtype.jpg)
 ### One-way Slab:
 
 - One-way slabs are structural elements commonly used in building construction to support loads
@@ -21,12 +21,13 @@ openings.
 serviceability requirements are met.
 - The design is then validated through structural analysis, either using software tools like ETABS,
 SAP2000, or manual calculations following established design procedures.
+
 ### Two-way Slab:
--A rectangular slab supported on four sides, and experiencing two-way bending: where transverse
+- A rectangular slab supported on four sides, and experiencing two-way bending :  where transverse
 loads span in both directions, perpendicular to all supporting edges. The load is distributed evenly,
 resembling a dish or saucer, transferring the load to the supports and deflecting in both directions.
 
--Deflection Profile: In the case of a two-way slab, the deflection profile resembles that of a dish or
+- Deflection Profile : In the case of a two-way slab, the deflection profile resembles that of a dish or
 saucer, as observed from the slab behavior described above. The deflection contours obtain from
 these surfaces These contours display varying shapes, closely spaced in certain areas, indicating
 steeper curvature in the shorter direction due to the concentration of bending moments, while being
