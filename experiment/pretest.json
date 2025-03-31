@@ -2,86 +2,56 @@
     "version": 2,
     "questions": [
         {
-            "question": "What is the highest dia reinforcing may be used for an 80mm thick slab?",
+            "question": "Which structural element resists loads primarily in one direction?",
             "answers": {
-                "a": "20mm",
-                "b": "25mm",
-                "c": "16mm",
-                "d": "10mm"
-            },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
-            },
-            "correctAnswer": "d",
-            "difficulty": "beginner"
-        },
-        {
-            "question": "The thickness of a slab of dimension 5m*6m subjected to moment of 9kN-m/m width of M20 concrete and Fe415 steel is given by which of the following?",
-            "answers": {
-                "a": "100mm",
-                "b": "150mm",
-                "c": "200mm",
-                "d": "300mm"
-            },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
+                "a": "One-way slab",
+                "b": "Two-way slab",
+                "c": "Beam",
+                "d": "Column"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
         {
-            "question": "What is the effective depth of a 120mm thick slab having clear cover 25mm and rebars of 20mm?",
+            "question": "The long-to-short span ratio for a slab to be considered a one-way slab is:",
             "answers": {
-                "a": "75mm",
-                "b": "85mm",
-                "c": "65mm",
-                "d": "55mm"
-            },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
+                "a": "< 1",
+                "b": "> 2",
+                "c": "= 1",
+                "d": "Between 1 and 2"
             },
             "correctAnswer": "b",
             "difficulty": "beginner"
         },
         {
-            "question": "For a continuous slab (Fe 415) of 3000*6000 what is the maximum thickness of the slab?",
+            "question": "What is the main reinforcement direction in a one-way slab?",
             "answers": {
-                "a": "94mm",
-                "b": "84mm",
-                "c": "75mm",
-                "d": "44mm"
-            },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
+                "a": "Along the shorter span",
+                "b": "Along the longer span",
+                "c": "Diagonal to both spans",
+                "d": "None of the above"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
         {
-            "question": ".Which of the following is the basic value of effective depth ratio for control of deflection for cantilever slabs (for span up to 10)?",
+            "question": "What is the minimum recommended thickness for a simply supported one-way slab?",
             "answers": {
-                "a": "7",
-                "b": "20",
-                "c": "26",
-                "d": "33"
+                "a": "L/10",
+                "b": "L/20",
+                "c": "L/30",
+                "d": "L/40"
             },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which type of reinforcement is used in a two-way slab?",
+            "answers": {
+                "a": "Main reinforcement in both directions",
+                "b": "Only in the longer span",
+                "c": "Only in the shorter span",
+                "d": "Diagonal reinforcement only"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
