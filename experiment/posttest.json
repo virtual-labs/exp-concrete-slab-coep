@@ -32,10 +32,10 @@
         {
             "question": "For a simply supported one-way slab, which expression best represents the maximum bending moment (M) due to a uniformly distributed load (w) over span (L)?",
             "answers": {
-                "a": "M = wL²/8",
-                "b": "M = wL²/12",
-                "c": "M = wL²/16",
-                "d": "M = wL²/24"
+                "a": "M = wL<sup>2</sup>/8",
+                "b": "M = wL<sup>2</sup>/12",
+                "c": "M = wL<sup>2</sup>/16",
+                "d": "M = wL<sup>2</sup>/24"
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
