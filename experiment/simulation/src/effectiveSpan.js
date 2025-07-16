@@ -1,5 +1,4 @@
 function effectiveSpan( ly,lx){
-//	console.log("gfjgkhkgjgh");
 	var htm=''
 		htm+='<div class="row" id="depthrow" >'
 		    +'<div class="col-sm-1">'
@@ -230,7 +229,7 @@ function effectiveSpan( ly,lx){
 		   +'<div class="col-sm-1">'
 		   +'</div>'
 		   +'</div>'
-	    $("#page2Div2").html(htm);
+	    $("#main-div-conf").html(htm);
 	
 	 var width;
 	 var length;
@@ -324,7 +323,8 @@ function effectiveSpan( ly,lx){
 								id=0;
 								$("#nextLevelModel").prop("hidden",false);
 								$("#btnModal").prop("hidden",true);
-								
+								mimic();
+								labelslab();
 								 $("#modelBody").css("color", "blue");
 								$("#modelBody").html("<b class='boldTextGreen'>Correct Answer. Now calculate Leffect.</b>");
 
