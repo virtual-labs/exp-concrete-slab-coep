@@ -7,7 +7,7 @@
 	/* 		background-color:#ededf1; */
 /* 	background-image: url("../images/bg.jpg"); */
 	font-family: Cambria, Georgia, serif;
-/* 	padding: 20px 1%; */
+	
 }
 
 header {
@@ -15,7 +15,6 @@ header {
 	height: 100px;
 	width: 100%;
 	padding: 0 5%;
-	
 	background: rgb(125,176,169);
 background: linear-gradient(90deg, rgba(125,176,169,1) 0%, rgba(78,109,114,1) 31%, rgba(33,44,62,1) 100%);
 }
@@ -464,5 +463,5 @@ header h2 {
 /* } */
 
 
-
-/* /*question css end*/ */
+{}
+/*question css end */
