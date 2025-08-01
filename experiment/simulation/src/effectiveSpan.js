@@ -1,3 +1,4 @@
+ var widValue;
 function effectiveSpan( ly,lx){
 	var htm=''
 		htm+='<div class="row" id="depthrow" >'
@@ -240,12 +241,26 @@ function effectiveSpan( ly,lx){
 		});
 	 
 	 $("#bendingMomentCall").click(function(){
+		 var depth=$("#depth").val();
+		 tempMasterJson = {
+					"Depth(D)":depth,
+					"Effective depth (d) meter":dValue,
+					"Width  of Support (w)":widValue,
+					"Span of Slab(L)":Length,
+					"l<sub>eff</sub>":leff,
+					"load on slab":loadonSlabText,
+					"Load in KN/m Load (W) ":Wu,
+					"Wu":WuValue
+			
+					};
+			jsonArray.push(tempMasterJson);
+			MasterJson=jsonArray;
 		 bendingMoment(WuValue,leff);
 		});
 	 
-	 
+	
 	 $("#width1").change(function(){
-		 var widValue=parseFloat($("#width1").val());
+		  widValue=parseFloat($("#width1").val());
 		 //  console.log("widValue "+widValue);
 		 if((widValue>=0) && (widValue<=1)){
              var d=roundOfAns;
@@ -331,7 +346,7 @@ function effectiveSpan( ly,lx){
 							} else {
 
 								 $("#modelBody").css("color", "green");
-								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+'mm</b>');
+								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+' meter</b>');
 							}
 						}
 						id++;
@@ -340,10 +355,10 @@ function effectiveSpan( ly,lx){
 				  
 				  
 			  });
-	 
+	 var loadonSlabText;
 	 $('#loadonSlabText').change(function(){
 		 
-		 var loadonSlabText=$("#loadonSlabText").val();
+		  loadonSlabText=$("#loadonSlabText").val();
 		 $("#LoadInKNM").prop("hidden",false);
 		 
 		 $("#areaLoadFormula").html(' <img src="images/Wu.png"> ');
@@ -413,7 +428,7 @@ function effectiveSpan( ly,lx){
 							} else {
 
 								 $("#modelBody").css("color", "green");
-								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+'kN/m</b>');
+								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+' kN/m</b>');
 							}
 						}
 						id++;
@@ -429,8 +444,8 @@ function effectiveSpan( ly,lx){
 			var areaLoadText= parseFloat($("#areaLoadText").val());
 
 			var roundOfAns=areaLoadText*1.5;
-			WuValue=roundOfAns;
-			console.log(" Wu final answer "+roundOfAns);
+			WuValue=roundOfAns*1000;
+			console.log(" Wu final answer "+WuValue);
 				var   flow = parseFloat($("#WuText").val());
 				  if(flow==""){
 
@@ -440,7 +455,7 @@ function effectiveSpan( ly,lx){
 				else
 					{
 						if (id <= 3) {
-							if (roundOfAns == flow) {
+							if (WuValue == flow) {
 								id=0;
 								$("#nextLevelModel").prop("hidden",false);
 								$("#bendingMoment1").prop("hidden",false);
@@ -449,7 +464,7 @@ function effectiveSpan( ly,lx){
 								 $("#modelBody").css("color", "blue");
 								$("#modelBody").html("<b class='boldTextGreen'>Correct Answer. Go to Bending Moment.</b>");
 								
-							} else if (roundOfAns != flow) {
+							} else if (WuValue != flow) {
 								 $("#modelBody").css("color", "red");
 //							alert("Entered value is incorrect.Try it again. ");
 							$("#modelBody").html("<b class='boldTextRed'>Entered value is incorrect.Try it again.</b>");
@@ -464,7 +479,7 @@ function effectiveSpan( ly,lx){
 						} else {
 							flow = parseFloat($("#WuText").val());
 
-							if (roundOfAns == flow) {
+							if (WuValue == flow) {
 								id=0;
 								$("#nextLevelModel").prop("hidden",false);
 								$("#bendingMoment1").prop("hidden",false);
@@ -476,7 +491,7 @@ function effectiveSpan( ly,lx){
 							} else {
 
 								 $("#modelBody").css("color", "green");
-								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+'kN/m</b>');
+								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + WuValue+'kN/m</b>');
 							}
 						}
 						id++;
@@ -553,7 +568,7 @@ function effectiveSpan( ly,lx){
 							} else {
 
 								 $("#modelBody").css("color", "green");
-								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+'mm</b>');
+								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+'meter</b>');
 							}
 						}
 						id++;
@@ -562,6 +577,9 @@ function effectiveSpan( ly,lx){
 			  });
 	 
 	 $("#nextLevelModel").click(function(){
+		 
+		 
+		
 		 
 		 $("#lengthSupport,#widthSupport").prop("hidden",false);
 	

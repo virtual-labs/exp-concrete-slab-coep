@@ -36,7 +36,7 @@ if ($(window).width() < 500) {
 
 }
 function plainslab(){
-	var img1=paper.image("images/slab1.png",x-20,y-50,700,500);
+	var img1=paper.image("images/indexPage.png",x-20,y-50,700,500);
 }
 function labelslab(){
 	
