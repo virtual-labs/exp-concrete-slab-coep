@@ -1,3 +1,5 @@
+	var jsonArray=[];
+	MasterJson={};
 $( document ).ready(function() {
 	mimic();
 	plainslab();
@@ -43,9 +45,23 @@ var htm=''
 	    +'</div>'
 	   +'<div class="col-sm-4" style="background-color:#d1cbcb;">'
 	+'<br>'
-	   +'<strong  style="color:red;font-size:20px;" id="formulaText"></strong> '
+	   +'<strong  style="color:blue;font-size:20px;" id="formulaText"></strong> '
 	   +'<br>'
 	  
+	   +'</div>'
+	   +'<div class="col-sm-1">'
+	   +'</div>'
+	   +'</div>'
+	   +'<div class="row">'
+	   +'<div class="col-sm-1">'
+	   +'</div>'
+	   +'<div class="col-sm-5">'
+	   +'</div>'
+	   +'<div class="col-sm-5">'
+	   +'<div class="alert alert-danger alert-dismissible" id="errorDiv" hidden>'
+//	   +' <button type="button" class="close" data-dismiss="alert">×</button>'
+	   +' <strong id="errorText" class="steel" style="font-size:20px;"  ></strong> '
+	   +'</div>'
 	   +'</div>'
 	   +'<div class="col-sm-1">'
 	   +'</div>'
@@ -58,7 +74,7 @@ var htm=''
 	   +'</div>'
 	   
 	   +'<div class="col-sm-5">'
-	   +'<select  class="form-control selectConf marginBottom" id="concreteGrade" " style="height:auto; " >'
+	   +'<select  class="form-control selectConf marginBottom" id="concreteGrade" " style="height:auto; " disabled>'
 	   +'<option value="0">--- Select grade of concrete --- </option>'
 	   +'<option value="10" >M10  </option>'
 	   +'<option value="15" >M15  </option>'
@@ -105,7 +121,7 @@ var htm=''
 	   +'<label class="labelstyle marginBottom">Grade of Steel f<sub>y</sub> : </label>'
 	   +'</div>'
 	   +'<div class="col-sm-5">'
-	   +'<select  class="form-control selectConf marginBottom" id="steelGrade" " style="height:auto; "  >'
+	   +'<select  class="form-control selectConf marginBottom" id="steelGrade" " style="height:auto; " disabled  >'
 	   +'<option value="0">--- Select grade of steel --- </option>'
 	   +'<option value="250" >Fe250  </option>'
 	   +'<option value="415" >Fe415  </option>'
@@ -149,21 +165,34 @@ var ly=0;
 $("#lx").change(function(){
 	lx=parseInt($("#lx").val());
 	ly=parseInt($("#ly").val());
-	var ans=parseInt(ly/lx);
-	if(ans>2)
+	if(lx<ly)
 	{
-		$("#formulaRow").prop("hidden",false);
-//		$("#Formula").attr("src","");
-			$("#formula").attr("src", "images/greater.png");
-			$("#formulaText").html("THIS IS A ONE WAY SLAB");
+		 $("#errorDiv").prop("hidden",true);
+		var ans=parseInt(ly/lx);
+		
+		if(ans>2)
+		{
+			$("#formulaRow").prop("hidden",false);
+			$("#steelGrade,#concreteGrade").prop("disabled",false);
+//			$("#Formula").attr("src","");
+				$("#formula").attr("src", "images/greater.png");
+				$("#formulaText").html("THIS IS A ONE WAY SLAB");
+		}
+		else
+		{
+			$("#formulaRow").prop("hidden",false);
+//			$("#Formula").attr("src","");
+			$("#formula").attr("src", "images/less.png");
+			$("#formulaText").html("THIS IS A TWO WAY SLAB");
+		}
 	}
 	else
-	{
-		$("#formulaRow").prop("hidden",false);
-//		$("#Formula").attr("src","");
-		$("#formula").attr("src", "images/less.png");
-		$("#formulaText").html("THIS IS A TWO WAY SLAB");
-	}
+		{
+		 $("#errorDiv").prop("hidden",false);
+		 $("#errorText").html("<center>lx should always be smaller than ly change value of lx and enter again.</center>");
+		 
+		}
+	
 	mimic();
 	plainslab();
 });
@@ -211,6 +240,18 @@ var rountofAns;
 
 
 $("#effectiveSpanCall").click(function(){
+	
+	$("#referTable").html("");
+	tempMasterJson = {
+			"lx":lx,
+			"ly":ly,
+			"ConcreteGrade":concreteGrade,
+			"SteelGrade":steelGrade,
+	
+			};
+	jsonArray.push(tempMasterJson);
+	MasterJson=jsonArray;
+	
 	
 	$("#main-div-conf").html("");
 	effectiveSpan(ly,lx);
