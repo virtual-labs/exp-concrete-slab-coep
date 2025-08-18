@@ -29,6 +29,17 @@
  font-family:'digital-clock-font';
  src: url('font/digital-7.ttf');
 }
+
+  #blinkText {
+    font-weight: bold;
+    color: #611919;
+    border: 2px dashed #ff7e00;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+  float:right;
+  }
+
 </style>
 <body>
 
@@ -40,9 +51,12 @@
 	
 <div  class="row " style="margin-top:20px;">
 	<div  class="col-sm-10">
+
+		<center id="blinkText"><b>Note-</b> After entering a value in the text box, press the Enter key to submit</center>
+
 	 </div>
-	 <div  class="col-sm-2">
-	 <button type="button" class="btn btn-info" id="referValue" data-toggle="modal" data-target="#exampleModal" style="float:left" >Reference Value</button>
+<!-- 	 <div  class="col-sm-2"> -->
+	 <button type="button" class="btn btn-info" id="referValue" data-toggle="modal" data-target="#exampleModal" style="float:left" hidden >Reference Value</button>
      
 	 </div>
 	 <!-- Modal -->
@@ -50,7 +64,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Reference Value</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -183,6 +197,14 @@ Copyrights &copy; COEP - Virtual Lab
 // toastr.success("Jalma re");
 // toastr.error("Zala gondhal");
 // toastr.info("Tuza mahiti sathi");
+
+function blink() {
+  $('#blinkText').fadeOut(1000).fadeIn(1000);
+}
+
+// Blink every 1 second
+setInterval(blink, 2000);
+
 </script>
 
 </html>

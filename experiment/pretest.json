@@ -55,6 +55,28 @@
             },
             "correctAnswer": "a",
             "difficulty": "beginner"
+        },
+        {
+            "question": "The deflection profile of a two-way slab is generally:",
+            "answers": {
+                "a": "Flat",
+                "b": "Triangular",
+                "c": "Dish or saucer-shaped",
+                "d": "Circular arc"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "In one-way slabs, the main reinforcement is provided:",
+            "answers": {
+                "a": "In both directions equally",
+                "b": "Only in the direction of load transfer",
+                "c": "Only perpendicular to the load",
+                "d": "In the shorter span direction"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
         }
     ]
 }
