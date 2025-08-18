@@ -4,11 +4,15 @@ $( document ).ready(function() {
 	mimic();
 	plainslab();
 var htm=''
-	htm+='<div class="row">'
+	htm+=''
+		
+		
+
+	+'<div class="row">'
 	+'<div class="col-sm-1">'
 	+'</div>'	
 	+'<div class="col-sm-5">'
-	+'<label class="labelstyle marginBottom">Enter Larger Dimension(Ly)mm: </label>'
+	+'<label class="labelstyle marginBottom">Enter Larger Dimension(Ly) mm: </label>'
 	+'</div>'
 	+'<div class="col-sm-5">'
 	+'<input type="number"  style= "width:100%;" min="1" max="5" class=" form-control " id="ly" / >'
@@ -16,12 +20,14 @@ var htm=''
 	+'<div class="col-sm-1">'
 	+'</div>'	
     +'</div>'
-    
+//    +' <label for="customRange3" class="form-label">Example range: <span id="rangeValue"></span></label>'
+//    +'<input type="range" class="form-range" min="50" max="200" step="5" id="customRange3" value="50">'
+
     +'<div class="row" >'
     +'<div class="col-sm-1">'
 	+'</div>'	
 	+'<div class="col-sm-5">'
-	+'<label class="labelstyle marginBottom">Enter Smaller Dimension (Lx)mm: </label>'
+	+'<label class="labelstyle marginBottom">Enter Smaller Dimension (Lx) mm: </label>'
 	+'</div>'
 	+'<div class="col-sm-5">'
 	+'<input type="number"  style= "width:100%;" min="1" max="5" class=" form-control " id="lx"  / >'
@@ -149,7 +155,7 @@ var htm=''
 	   +'<div class="col-sm-1">'
 	   +'</div>'
 	   +'<div class="col-sm-10">'
-	   +'<br><button type="submit" class="btn btn-danger" id="effectiveSpanCall" style="width:100%;margin-top: -6px;" disabled>Next Level Effective Span</button>'
+	   +'<br><button type="submit" class="btn btn-danger" id="effectiveSpanCall" style="width:100%;margin-top: -6px;" disabled>Calculate Effective Span</button>'
        
 	   +'</div>'
 	   +'</div>'
@@ -161,6 +167,13 @@ var htm=''
 	   $("#main-div-conf").html(htm);
 var lx=0;
 var ly=0;
+
+//  $(document).ready(function(){
+//    $('#customRange3').on('input change', function() {
+//      $('#rangeValue').text($(this).val());
+//    });
+//  });
+
 
 $("#lx").change(function(){
 	lx=parseInt($("#lx").val());
@@ -183,7 +196,7 @@ $("#lx").change(function(){
 			$("#formulaRow").prop("hidden",false);
 //			$("#Formula").attr("src","");
 			$("#formula").attr("src", "images/less.png");
-			$("#formulaText").html("THIS IS A TWO WAY SLAB");
+			$("#formulaText").html("THIS IS A TWO WAY SLAB AGAIN CHANGE Lx VALUE");
 		}
 	}
 	else

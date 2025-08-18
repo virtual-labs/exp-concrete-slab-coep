@@ -61,6 +61,17 @@
             },
             "correctAnswer": "d",
             "difficulty": "beginner"
+        },
+        {
+            "question": "When designing a one-way slab, shear reinforcement is usually provided:",
+            "answers": {
+                "a": "Throughout the slab",
+                "b": "Near supports if shear exceeds permissible limit",
+                "c": "Only in mid-span region",
+                "d": "Not required at all"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
         }
     ]
 }

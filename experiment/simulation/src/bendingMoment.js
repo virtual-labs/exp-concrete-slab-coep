@@ -91,11 +91,11 @@ function bendingMoment(wu,leff){
 			   +'<div class="col-sm-1">'
 			   +'</div>'
 			   +'<div class="col-sm-5">'
-			   +'<label class="labelstyle marginBottom">Bar dimeter &#8960;(mm)</label>'
+			   +'<label class="labelstyle marginBottom">Bar diameter &#8960;(mm)</label>'
 			   +'</div>'
 			   +'<div class="col-sm-5">'
 			   +'<select  class="form-control selectConf marginBottom" id="bar"  style="height:auto; "  >'
-			   +'<option value="0">--- Select bar dimeter(mm) --- </option>'
+			   +'<option value="0">--- Select bar diameter(mm) --- </option>'
 			   +'<option value="12" >12  </option>'
 			   +'<option value="16" >16  </option>'
 			   +'<option value="20" >20  </option>'
@@ -135,6 +135,19 @@ function bendingMoment(wu,leff){
 				   +'</div>'
 				   +'</div>'
 				   
+				   +'<div class="row" id="complete" hidden >'
+				   +'<div class="col-sm-1">'
+				   +'</div>'
+				  
+				   +'<div class="col-sm-10">'
+				   +'<div class="alert alert-info alert-dismissible" id="" >'
+				   +' <strong id="completeText" class="steel" style="font-size:20px;"  ><center>Experiment Completed successfully.</center> </strong> '
+					  
+				   +'</div>'
+				   +'</div>'
+				   +'<div class="col-sm-1">'
+				   +'</div>'
+				   +'</div>'
 			$("#main-div-conf").html(htm);
 	var id=0;
 	var roundOfAns=0;
@@ -279,7 +292,7 @@ function bendingMoment(wu,leff){
 						} else {
 
 							 $("#modelBody").css("color", "green");
-							$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + outast+' kNm</b>');
+							$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + outast+' mm<sup>2</sup></b>');
 						}
 					}
 					id1++;
@@ -326,14 +339,15 @@ function bendingMoment(wu,leff){
 			var bar1=parseInt($("#bar").val());
 			var astbar=parseFloat((3.14/4)*bar1*bar1);
 			
-			$('#spacingbarText').html("<center>Ast &#8960; ="+astbar.toFixed(2)+"</center>");
+			$('#spacingbarText').html("<center>Ast &#8960; ="+astbar.toFixed(2)+"</center><br><center>Now calculate spacing formula:(1000*ast &#8960/Consider ast)</center><br>");
 			var spacing=parseFloat((1000*astbar)/finalAst);
 			let lower10 = Math.floor(spacing / 10) * 10;  // 190
-			if(lower10>=300)
-			$('#spacingbarText1').html("<center>Provide "+bar1+"mm diameter bars at a spacing of ="+lower10+"mm.</center>");
+			if(parseInt(lower10)>=300)
+			$('#spacingbarText1').html("<center>Hence, "+bar1+" mm diameter bars are to be provided at 300 mm spacing to meet the required reinforcement criteria.</center>");
 			else
-				$('#spacingbarText1').html("<center>Provide "+bar1+"mm diameter bars at a spacing of ="+lower10+"mm.</center>");	
+				$('#spacingbarText1').html("<center>Hence, "+bar1+" mm diameter bars are to be provided at "+lower10+" mm spacing to meet the required reinforcement criteria.</center>");	
 			
+			$("#complete").prop("hidden",false);
 			console.log("astbar "+astbar);	
 			console.log("spacing "+spacing);	
 		});

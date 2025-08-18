@@ -1,5 +1,6 @@
  var widValue;
 function effectiveSpan( ly,lx){
+	$("#referValue").prop("hidden",false);
 	var htm=''
 		htm+='<div class="row" id="depthrow" >'
 		    +'<div class="col-sm-1">'
@@ -341,7 +342,7 @@ function effectiveSpan( ly,lx){
 								mimic();
 								labelslab();
 								 $("#modelBody").css("color", "blue");
-								$("#modelBody").html("<b class='boldTextGreen'>Correct Answer. Now calculate Leffect.</b>");
+								$("#modelBody").html("<b class='boldTextGreen'>Correct Answer. Now calculate L<sub>eff</sub>.</b>");
 
 							} else {
 
@@ -418,7 +419,6 @@ function effectiveSpan( ly,lx){
 								$("#nextLevelModel,#WuDiv").prop("hidden",false);
 								$("#btnModal").prop("hidden",true);
 //								$("#loadonSlabDiv").prop("hidden",false);
-
 //								 $("#factoredLoadFormula").html(' <strong  class="concrete" style="font-size:20px;" >Factored Load (W<sub>u</sub>)= 1.5 * W</strong> ');
 //								 $("#factoredLoadFormulaValue").html(' <strong  class="concrete" style="font-size:20px;" >Factored Load (W<sub>u</sub>) = 1.5 *'+areaLoadText+'</strong> ');
 								
@@ -491,7 +491,7 @@ function effectiveSpan( ly,lx){
 							} else {
 
 								 $("#modelBody").css("color", "green");
-								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + WuValue+'kN/m</b>');
+								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + WuValue+' kN/m</b>');
 							}
 						}
 						id++;
@@ -568,7 +568,7 @@ function effectiveSpan( ly,lx){
 							} else {
 
 								 $("#modelBody").css("color", "green");
-								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+'meter</b>');
+								$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + roundOfAns+' meter</b>');
 							}
 						}
 						id++;
