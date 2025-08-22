@@ -1,0 +1,77 @@
+{
+    "version": 2,
+    "questions": [
+        {
+            "question": "What is the not function of the transverse reinforcement?",
+            "answers": {
+                "a": "It distributes the load more evenly and uniformly on the slab",
+                "b": "It prevents the shrinkage or temperature effect",
+                "c": "It keeps the main reinforcement in position",
+                "d": "It works as the main reinforcement"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "If the support condition of a slab changes from simply supported to fixed, the moment coefficient will:",
+            "answers": {
+                "a": "Increase",
+                "b": "Decrease",
+                "c": "Remain the same",
+                "d": "First increase, then decrease"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "For a simply supported one-way slab, which expression best represents the maximum bending moment (M) due to a uniformly distributed load (w) over span (L)?",
+            "answers": {
+                "a": "M = wL<sup>2</sup>/8",
+                "b": "M = wL<sup>2</sup>/12",
+                "c": "M = wL<sup>2</sup>/16",
+                "d": "M = wL<sup>2</sup>/24"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which slab system is preferred for heavy loads in a multi-story hospital building?",
+            "answers": {
+                "a": "Flat slab",
+                "b": "One-way slab",
+                "c": "Two-way slab",
+                "d": "Waffle slab"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which type of column is typically used to support slabs in multi-story buildings?",
+            "answers": {
+                "a": "Rectangular column",
+                "b": "Circular column",
+                "c": "Square column",
+                "d": "All of the above"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "When designing a one-way slab, shear reinforcement is usually provided:",
+            "answers": {
+                "a": "Throughout the slab",
+                "b": "Near supports if shear exceeds permissible limit",
+                "c": "Only in mid-span region",
+                "d": "Not required at all"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        }
+    ]
+}

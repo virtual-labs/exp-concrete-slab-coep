@@ -1,0 +1,82 @@
+{
+    "version": 2,
+    "questions": [
+        {
+            "question": "Which structural element resists loads primarily in one direction?",
+            "answers": {
+                "a": "One-way slab",
+                "b": "Two-way slab",
+                "c": "Beam",
+                "d": "Column"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "The long-to-short span ratio for a slab to be considered a one-way slab is:",
+            "answers": {
+                "a": "< 1",
+                "b": "> 2",
+                "c": "= 1",
+                "d": "Between 1 and 2"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the main reinforcement direction in a one-way slab?",
+            "answers": {
+                "a": "Along the shorter span",
+                "b": "Along the longer span",
+                "c": "Diagonal to both spans",
+                "d": "None of the above"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the minimum recommended thickness for a simply supported one-way slab?",
+            "answers": {
+                "a": "L/10",
+                "b": "L/20",
+                "c": "L/30",
+                "d": "L/40"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which type of reinforcement is used in a two-way slab?",
+            "answers": {
+                "a": "Main reinforcement in both directions",
+                "b": "Only in the longer span",
+                "c": "Only in the shorter span",
+                "d": "Diagonal reinforcement only"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "The deflection profile of a two-way slab is generally:",
+            "answers": {
+                "a": "Flat",
+                "b": "Triangular",
+                "c": "Dish or saucer-shaped",
+                "d": "Circular arc"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "In one-way slabs, the main reinforcement is provided:",
+            "answers": {
+                "a": "In both directions equally",
+                "b": "Only in the direction of load transfer",
+                "c": "Only perpendicular to the load",
+                "d": "In the shorter span direction"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        }
+    ]
+}
